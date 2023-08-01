@@ -1,3 +1,5 @@
+Dashboards presented below are interactive in nature, please feel free to interact with them. :)
+
 # Sample HR Dashboard
 
 The following dashboard is prepared from a sample dataset consisting of HR data & is aimed at finding patterns of attrition in the company's workforce as seen with different parameters. (Dataset courtesy goes to https://drive.google.com/drive/folders/18mQalCEyZypeV8TJeP3SME_R6qsCS2Og.)
