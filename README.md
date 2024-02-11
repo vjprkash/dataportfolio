@@ -2,7 +2,7 @@ Sample Dashboards below are interactive, please feel free to explore :)
 
 # Job Market Analysis Dashboard
 
-<iframe title="Report Section" width="550" height="370" src="https://app.powerbi.com/view?r=eyJrIjoiNGIzYWQ4ZDMtMjMwMy00M2RmLTgxNmQtNmE2ZTgxYzkwZDAyIiwidCI6Ijg0N2I0NjNlLWZmOTgtNGMyYy05NzRhLWZjMDUwZDIxZjNiNSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Report Section" width="550" height="370" src="https://app.powerbi.com/view?r=eyJrIjoiZmI1MzZiNTAtYWVmOC00NTM1LWFhNjQtNzQwNGUwMjkzZGQwIiwidCI6Ijg0N2I0NjNlLWZmOTgtNGMyYy05NzRhLWZjMDUwZDIxZjNiNSJ9&amp;embedImagePlaceholder=true&amp;pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
 (Dataset Credit: www.datacamp.com)
 
 # HR Info Analysis Dashboard
