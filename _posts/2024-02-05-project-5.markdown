@@ -1,0 +1,65 @@
+---
+layout: default
+modal-id: 5
+img: personal/images/2jma/icon.png
+alt: image-alt
+category: Power BI, MS Excel
+---
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;width:auto;height:auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-size:12px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-size:12px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-cly1{text-align:left;vertical-align:middle}
+.tg .tg-99ka{background-color:#D9E1F2;font-weight:bold;text-align:left;vertical-align:middle}
+.responsive {width:auto;height:auto}
+</style>
+
+<div>
+	<p>The project “Job Market Analysis” investigates market trends in demand for jobs in a specific domain. The project follows the Data Analytics Pipeline <i>(Check > Explore > Analyze > Visualize > Dashboard > Insights)</i>; outlined as part of the learning from <em><a href="https://app.datacamp.com/learn">Datacamp</a></em>. The project uses an Excel Dataset with a single data table. The raw dataset consists of >25000 instances of job postings from the years 2017 to 2021. Each instance consists of 18 attributes and represents a unique ad for the job.</p>
+ 	
+	<p><b><u>Check:</u></b></p>
+	<p> To proceed with this exploratory data analysis, we start by checking the dataset for accuracy, completeness, and integrity. What I mean by that is ensuring that a single row represents a complete data object, a complete instance of the job. There are a total of 25115 instances of jobs in the dataset. But it consists of blank/missing fields, errors in columns, and inconsistent data formats. We proceed with a routine data cleanup by removing any empty and erroneous objects, identifying suitable replacements for blank/null/missing values, ensuring suitable formats for each field, removing duplicates, and so on. This helps in maintaining consistency in our insights, allowing clear storytelling with this data.</p>
+	
+	<p>In the next steps, we will create a STAR Schema data model with the cleaned data and investigate trends/patterns of job demand in the market. This will be followed by an interpretation of these trends/patterns and their relevance to the organization. Finally, we will create a multi-page dashboard with Power BI to convey the data narrative. So, let’s dive in.</p>
+	
+	<p><b><u>Explore:</u></b></p>
+	<p>
+		<ol type="i">
+			<li>Make a note of dependencies/relationships between the fields of data.</li>
+			<li>Identify a unique row identifier, such as <i>Job Posting ID,</i> and how other fields of the dataset depend on it</li>
+			<li>Identify columns that could be grouped to represent a specific aspect of the job instance.</li>
+			<li>Look for hierarchies that could potentially be used to explain data trends, such as <i> Job Posting Date</i>.</li>
+			<li>Segregate the columns with unique identifiers to form smaller tables that could be linked together for presenting summarized data.</li>
+			<li>Data model created for this project is shown below:<br><br>
+				<div><img src="./personal/images/2jma/2_data_model.png" class="img-responsive" /></div>
+			</li>
+		</ol>
+	</p>
+
+<p><b><u>Analyze:</u></b></p>
+	<p>There were 25077 unique job listings of 53 distinct job titles in 1826 distinct days between the years 2017-21. These jobs were posted by 4470 different companies of 9 different sizes, across 120 different industries. For EDA(exploratory data analysis), we explore the tables and their data fields in our newly created data model to investigate questions we could ask from these.</p>
+	<p>For example, think about questions such as:
+	<ol type="i">
+			<li>What is the trend of job posting events for any period over the past 5 years?</li>
+			<li>What were the top job positions in demand during this period?</li>
+			<li>What were the top skills in demand?</li>
+			<li>Which locations across the United States had the highest number of jobs in a period? </li>
+			<li>What was the variation in pay trends such as average min and max pay, over the years?</li>
+			<li>What was the share of various levels of job position over time?</li>
+			<li>Which were the top companies hiring?</li>
+			<li>How can a user find jobs posted according to Job Title, Skills, Company, Experience Level, Industry, Posting Date, Location, or position type?</li>
+	</ol></p>
+	<p> These are only some of the few questions we could potentially investigate to see where the job market in this domain is going. There are two ways of doing this analysis; we could either work directly in Power BI and start preparing visualization after grouping questions to investigate in sections. Or do an exploratory analysis with Pivot Tables in Excel, select only the relevant questions to tell a data story, and then proceed with creating visuals with Power BI. I prefer the latter approach.</p>
+	
+	<p><b><u>Visualize:</u></b></p>
+	<p>Once we have completed our analysis, we create appropriate visuals that fit our requirements. To show the trend in jobs posted we use a line area chart with the number of jobs segregated by period, a donut chart for showing the share of various job levels across total job listings in the selection, a treemap for top locations, a multiline chart for top skill trend comparison and so on. The important thing to remember is that the visuals must convey a specific insight. Once we have all our visualizations done, we group them into categories in such as way that conveys a proper data story and create a dashboard for use.</p>
+	
+	<p><b><u>Dashboard:</u></b></p>
+	<p>The dashboard created for this project is shown below. It is an interactive dashboard made with Power BI. Please feel free to explore different visuals used and features such as drill down or filter they have.<br><br></p>
+<div style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+  <iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZmI1MzZiNTAtYWVmOC00NTM1LWFhNjQtNzQwNGUwMjkzZGQwIiwidCI6Ijg0N2I0NjNlLWZmOTgtNGMyYy05NzRhLWZjMDUwZDIxZjNiNSJ9&amp;embedImagePlaceholder=true&amp;pageName=ReportSection" frameborder="0" allowfullscreen="true" style="position:absolute; top:0; left: 0">
+  </iframe>
+</div>
+
